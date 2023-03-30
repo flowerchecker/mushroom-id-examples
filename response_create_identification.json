@@ -1,10 +1,10 @@
 {
-    "access_token": "NCi...",
+    "access_token": "d48...",
     "model_version": "mushroom_id:1.0.0-beta",
     "custom_id": null,
     "input": {
         "images": [
-            "https://staging.mushroom.mlapi.ai/media/images/84cf5e0b24ce46bb8168c693e96c3ae5.jpg"
+            "https://mushroom.mlapi.ai/media/images/d7e91f6776294a40820e5ab82b52affd.jpg"
         ],
         "similar_images": true
     },
@@ -96,7 +96,7 @@
                             }
                         ],
                         "psychoactive": true,
-                        "gbif_id": null
+                        "gbif_id": "8168319"
                     }
                 }
             ]
@@ -105,6 +105,6 @@
     "status": "COMPLETED",
     "sla_compliant_client": true,
     "sla_compliant_system": true,
-    "created": 1680075766.388546,
-    "completed": 1680075766.861581
+    "created": 1680161164.697155,
+    "completed": 1680161165.248714
 }
