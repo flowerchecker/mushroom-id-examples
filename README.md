@@ -6,7 +6,7 @@
 See our **[documentation](https://github.com/flowerchecker/Mushroom-id-API/wiki)** for the full reference.
 
 ## Mushroom Identification 🍄
-Send us your images of fungi encoded in base64, and you will recieve a list of possible species suggestions with additional information.
+Send us your images of fungi encoded in base64, and you will receive a list of possible species suggestions with additional information.
 ```python
 import base64
 import requests
