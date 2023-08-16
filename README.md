@@ -3,7 +3,7 @@
 
 [Mushoom ID](https://web.plant.id/mushroom-id/) is a mushroom identification API based on machine learning image recognition. [Get your API key](https://admin.mlapi.ai/signup) and get started with your implementation.
 
-See our **[documentation](https://github.com/flowerchecker/Mushroom-id-API/wiki)** for the full reference.
+See our **[documentation](http://mushroom.kindwise.com/docs)** for the full reference.
 
 ## Mushroom Identification 🍄
 Send us your images of fungi encoded in base64, and you will receive a list of possible species suggestions with additional information.
