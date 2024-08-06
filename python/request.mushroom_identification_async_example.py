@@ -8,7 +8,7 @@ from pathlib import Path
 import sys
 
 BASE_DIR = Path(__file__).parent.parent
-API_KEY = os.environ.get('API_KEY', 'PUT_YOUR_API_KEY_HERE')
+API_KEY = os.environ.get('API_KEY', '161c1qJ6w24UfCpOgXYxSHqctw5iAg0On4W2xbvCBg4aUpKBSx')
 
 
 def encode_file(file_name):
@@ -17,7 +17,7 @@ def encode_file(file_name):
 
 
 def create_identification(file_names):
-    # More optional parameters: https://github.com/flowerchecker/Mushroom-id-API/wiki/Request-identification
+    # More optional parameters: http://mushroom.kindwise.com/docs
     payload = {
         'images': [encode_file(img) for img in file_names],
         'latitude': 49.1951239,
@@ -30,7 +30,7 @@ def create_identification(file_names):
     }
 
     response = requests.post(
-        'https://mushroom.mlapi.ai/api/v1/identification?async',
+        'https://mushroom.kindwise.com/api/v1/identification?async',
         json=payload,
         headers=headers,
     )
@@ -45,14 +45,14 @@ def get_completed_identification(access_token, tries=10):
         'Api-Key': API_KEY,
     }
     params = {
-        # Details docs: https://github.com/flowerchecker/Mushroom-id-API/wiki/Details
+        # Details docs: http://mushroom.kindwise.com/docs
         'details': 'common_names,gbif_id,taxonomy,rank,characteristic,edibility,psychoactive',
     }
     for _ in range(tries):
         print("Waiting for suggestions...", file=sys.stderr)
         sleep(1)
         response = requests.get(
-            f'https://mushroom.mlapi.ai/api/v1/identification/{access_token}?' + urlencode(params),
+            f'https://mushroom.kindwise.com/api/v1/identification/{access_token}?' + urlencode(params),
             headers=headers,
         )
         assert response.status_code == 200, f'{response.status_code}: {response.text}'
@@ -66,7 +66,7 @@ def get_completed_identification(access_token, tries=10):
 if __name__ == '__main__':
     access_token = create_identification(
         [
-            BASE_DIR / 'images' / 'example.jpg',
+            BASE_DIR / 'images' / 'unknown_mushroom.jpg',
         ]
     )
     identification = get_completed_identification(access_token)

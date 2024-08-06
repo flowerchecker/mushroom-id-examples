@@ -1,60 +1,56 @@
 {
-    "access_token": "d48...",
-    "model_version": "mushroom_id:1.0.0-beta",
+    "access_token": "lRa8r119TNXl51I",
+    "model_version": "mushroom_id:1.2.2",
     "custom_id": null,
     "input": {
         "images": [
-            "https://mushroom.mlapi.ai/media/images/d7e91f6776294a40820e5ab82b52affd.jpg"
+            "https://mushroom.kindwise.com/media/images/32aae6267f7847ab89b483389e02eaab.jpg"
         ],
+        "datetime": "2024-08-06T15:09:17.939015+00:00",
+        "latitude": 49.1951239,
+        "longitude": 16.6077111,
         "similar_images": true
     },
     "result": {
         "classification": {
             "suggestions": [
                 {
-                    "id": "gbif:8168319",
+                    "id": "509e11b658e98f03",
                     "name": "Amanita muscaria",
-                    "probability": 0.99491596,
+                    "probability": 0.99,
                     "similar_images": [
-                        {
-                            "id": "00d8469db20361a72edac57aa4b0bd3729f65f92",
-                            "url": "https://mushroom-id.ams3.cdn.digitaloceanspaces.com/similar_images/1/00d/8469db20361a72edac57aa4b0bd3729f65f92.jpg",
-                            "license_name": "CC BY-SA 3.0",
-                            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-                            "citation": "Ian Dodd  (kk)   (www.kundabungkid.com) Australia",
-                            "similarity": 0.75,
-                            "url_small": "https://mushroom-id.ams3.cdn.digitaloceanspaces.com/similar_images/1/00d/8469db20361a72edac57aa4b0bd3729f65f92.small.jpg"
-                        },
                         {
                             "id": "1b4987ce285f11eaa1391a4f10b1febe82dcd86a",
                             "url": "https://mushroom-id.ams3.cdn.digitaloceanspaces.com/similar_images/1/1b4/987ce285f11eaa1391a4f10b1febe82dcd86a.jpg",
                             "license_name": "CC BY-SA 3.0",
                             "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
                             "citation": "J. Teodoro Chivata Bedoya",
-                            "similarity": 0.719,
+                            "similarity": 0.783,
                             "url_small": "https://mushroom-id.ams3.cdn.digitaloceanspaces.com/similar_images/1/1b4/987ce285f11eaa1391a4f10b1febe82dcd86a.small.jpg"
+                        },
+                        {
+                            "id": "00d8469db20361a72edac57aa4b0bd3729f65f92",
+                            "url": "https://mushroom-id.ams3.cdn.digitaloceanspaces.com/similar_images/1/00d/8469db20361a72edac57aa4b0bd3729f65f92.jpg",
+                            "license_name": "CC BY-SA 3.0",
+                            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+                            "citation": "Ian Dodd  (kk)   (www.kundabungkid.com) Australia",
+                            "similarity": 0.777,
+                            "url_small": "https://mushroom-id.ams3.cdn.digitaloceanspaces.com/similar_images/1/00d/8469db20361a72edac57aa4b0bd3729f65f92.small.jpg"
                         }
                     ],
                     "details": {
-                        "common_names": {
-                            "en": [
-                                "Fly agaric"
-                            ],
-                            "de": [
-                                "Fliegenpilz"
-                            ]
-                        },
+                        "common_names": [
+                            "Fly agaric",
+                            "Fly Amanita",
+                            "Euro-Asian Fly Agaric"
+                        ],
                         "taxonomy": {
+                            "class": "Agaricomycetes",
                             "genus": "Amanita",
                             "order": "Agaricales",
                             "family": "Amanitaceae",
                             "phylum": "Basidiomycota",
                             "kingdom": "Fungi"
-                        },
-                        "url": {
-                            "en": "https://en.wikipedia.org/wiki/Amanita_muscaria",
-                            "de": "https://de.wikipedia.org/wiki/Fliegenpilz",
-                            "global": "https://www.gbif.org/species/8168319"
                         },
                         "rank": "species",
                         "edibility": "poisonous",
@@ -66,37 +62,10 @@
                             "hymenium attachment": "free hymenium attachment",
                             "mushroom ecological type": "mycorrhiza"
                         },
-                        "look_alike": [
-                            {
-                                "url": {
-                                    "en": "https://en.wikipedia.org/wiki/Amanita_parcivolvata",
-                                    "de": null,
-                                    "global": "https://www.gbif.org/species/8338709"
-                                },
-                                "entity_id": "gbif:8338709",
-                                "name": "Amanita parcivolvata"
-                            },
-                            {
-                                "url": {
-                                    "en": "https://en.wikipedia.org/wiki/Amanita_caesarea",
-                                    "de": "https://de.wikipedia.org/wiki/Kaiserling",
-                                    "global": "https://www.gbif.org/species/5240269"
-                                },
-                                "entity_id": "gbif:5240269",
-                                "name": "Amanita caesarea"
-                            },
-                            {
-                                "url": {
-                                    "en": "https://en.wikipedia.org/wiki/Amanita_regalis",
-                                    "de": "https://de.wikipedia.org/wiki/K%C3%B6nigs-Fliegenpilz",
-                                    "global": "https://www.gbif.org/species/5240248"
-                                },
-                                "entity_id": "gbif:5240248",
-                                "name": "Amanita regalis"
-                            }
-                        ],
                         "psychoactive": true,
-                        "gbif_id": 8168319
+                        "gbif_id": 8168319,
+                        "language": "en",
+                        "entity_id": "509e11b658e98f03"
                     }
                 }
             ]
@@ -105,6 +74,6 @@
     "status": "COMPLETED",
     "sla_compliant_client": true,
     "sla_compliant_system": true,
-    "created": 1680161164.697155,
-    "completed": 1680161165.248714
+    "created": 1722956957.939015,
+    "completed": 1722956958.281068
 }

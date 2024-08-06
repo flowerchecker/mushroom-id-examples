@@ -1,7 +1,7 @@
 # Mushroom-id-API
 *⚠️ This service is in beta version and may undergo changes which may not be compatible with the current version.*
 
-[Mushoom ID](https://web.plant.id/mushroom-id/) is a mushroom identification API based on machine learning image recognition. [Get your API key](https://admin.mlapi.ai/signup) and get started with your implementation.
+[Mushoom ID](https://www.kindwise.com/mushroom-id) is a mushroom identification API based on machine learning image recognition. [Get your API key](https://admin.kindwise.com/signup) and get started with your implementation.
 
 See our **[documentation](http://mushroom.kindwise.com/docs)** for the full reference.
 
@@ -16,14 +16,14 @@ with open("unknown_mushroom.jpg", "rb") as file:
     images = [base64.b64encode(file.read()).decode("ascii")]
 
 response = requests.post(
-    "https://mushroom.mlapi.ai/api/v1/identification?details=common_names,url",
+    "https://mushroom.kindwise.com/api/v1/identification?details=common_names,url",
     json={
         "images": images,
         "similar_images": True,
     },
     headers={
         "Content-Type": "application/json",
-        "Api-Key": "-- ask for one: https://admin.mlapi.ai/signup --",
+        "Api-Key": "-- ask for one: https://admin.kindwise.com/signup --",
     }).json()
 
 for suggestion in response["result"]["classification"]["suggestions"]:
