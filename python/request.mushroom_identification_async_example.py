@@ -8,7 +8,7 @@ from pathlib import Path
 import sys
 
 BASE_DIR = Path(__file__).parent.parent
-API_KEY = os.environ.get('API_KEY', '161c1qJ6w24UfCpOgXYxSHqctw5iAg0On4W2xbvCBg4aUpKBSx')
+API_KEY = os.environ.get('API_KEY', 'your_api_key')
 
 
 def encode_file(file_name):
