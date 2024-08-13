@@ -36,22 +36,22 @@ import base64
 import requests
 
 # encode images to base64
-with open("unknown_mushroom.jpg", "rb") as file:
-    images = [base64.b64encode(file.read()).decode("ascii")]
+with open('unknown_mushroom.jpg', 'rb') as file:
+    images = [base64.b64encode(file.read()).decode('ascii')]
 
 response = requests.post(
-    "https://mushroom.kindwise.com/api/v1/identification?details=common_names,url",
+    'https://mushroom.kindwise.com/api/v1/identification?details=common_names,url',
     json={
-        "images": images,
-        "similar_images": True,
+        'images': images,
+        'similar_images': True,
     },
     headers={
-        "Content-Type": "application/json",
-        "Api-Key": "-- ask for one: https://admin.kindwise.com/signup --",
+        'Content-Type': 'application/json',
+        'Api-Key': '-- ask for one: https://admin.kindwise.com/signup --',
     }).json()
 
-for suggestion in response["result"]["classification"]["suggestions"]:
-    print(suggestion["name"])                     # Lactarius deterrimus
-    print(suggestion["details"]["common_names"])  # orange milkcap
-    print(suggestion["details"]["url"])           # https://en.wikipedia.org/wiki/Lactarius_deterrimus
+for suggestion in response['result']['classification']['suggestions']:
+    print(suggestion['name'])                     # Lactarius deterrimus
+    print(suggestion['details']['common_names'])  # orange milkcap
+    print(suggestion['details']['url'])           # https://en.wikipedia.org/wiki/Lactarius_deterrimus
 ```
