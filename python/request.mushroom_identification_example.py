@@ -16,6 +16,6 @@ identification = response.json()
 print(identification)
 for suggestion in identification['result']['classification']['suggestions']:
     print(suggestion['name'])                               # Amanita muscaria
-    print(f'probability {suggestion["probability"]:.2%}')   # 0.99
+    print(f'probability {suggestion["probability"]:.2%}')   # probability 0.99%
     print(suggestion['details']['common_names'])            # ['Fly agaric', 'Fly Amanita', 'Euro-Asian Fly Agaric']
     print()
