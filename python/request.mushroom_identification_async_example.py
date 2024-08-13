@@ -17,7 +17,7 @@ def encode_file(file_name):
 
 
 def create_identification(file_names):
-    # More optional parameters: http://mushroom.kindwise.com/docs
+    # More optional parameters: https://mushroom.kindwise.com/docs
     payload = {
         'images': [encode_file(img) for img in file_names],
         'latitude': 49.1951239,
@@ -45,7 +45,7 @@ def get_completed_identification(access_token, tries=10):
         'Api-Key': API_KEY,
     }
     params = {
-        # Details docs: http://mushroom.kindwise.com/docs
+        # Details docs: https://mushroom.kindwise.com/docs
         'details': 'common_names,gbif_id,taxonomy,rank,characteristic,edibility,psychoactive',
         'language': 'en,de'
     }
