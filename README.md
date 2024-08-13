@@ -1,5 +1,4 @@
 # Mushroom-id-API
-*⚠️ This service is in beta version and may undergo changes which may not be compatible with the current version.*
 
 [Mushoom ID](https://www.kindwise.com/mushroom-id) is a mushroom identification API based on machine learning image recognition. [Get your API key](https://admin.kindwise.com/signup) and get started with your implementation.
 
