@@ -47,9 +47,10 @@ def get_completed_identification(access_token, tries=10):
     params = {
         # Details docs: http://mushroom.kindwise.com/docs
         'details': 'common_names,gbif_id,taxonomy,rank,characteristic,edibility,psychoactive',
+        'language': 'en,de'
     }
     for _ in range(tries):
-        print("Waiting for suggestions...", file=sys.stderr)
+        print("Waiting for suggestions...")
         sleep(1)
         response = requests.get(
             f'https://mushroom.kindwise.com/api/v1/identification/{access_token}?' + urlencode(params),
@@ -70,4 +71,4 @@ if __name__ == '__main__':
         ]
     )
     identification = get_completed_identification(access_token)
-    print(json.dumps(identification, indent=4))
+    print(json.dumps(identification, indent=4, ensure_ascii=False))
