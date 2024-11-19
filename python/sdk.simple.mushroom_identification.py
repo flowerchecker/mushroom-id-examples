@@ -3,6 +3,7 @@ from kindwise import MushroomApi
 api = MushroomApi('your_api_key')
 identification = api.identify('../images/unknown_mushroom.jpg', details=['url', 'common_names'])
 
+print('is mushroom' if identification.result.is_mushroom.binary else 'is not mushroom')
 for suggestion in identification.result.classification.suggestions:
     print(suggestion.name)                              # Amanita muscaria
     print(f'probability {suggestion.probability:.2%}')  # probability 99.00%
