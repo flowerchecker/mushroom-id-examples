@@ -55,3 +55,7 @@ for suggestion in response['result']['classification']['suggestions']:
     print(suggestion['details']['common_names'])  # orange milkcap
     print(suggestion['details']['url'])           # https://en.wikipedia.org/wiki/Lactarius_deterrimus
 ```
+
+## On-device routing
+
+If your app handles plants, insects, and mushrooms in one camera flow, classify locally first with the [Kindwise Router](https://huggingface.co/kindwise) (`tiny` / `small` / `base`), then call the matching API.
